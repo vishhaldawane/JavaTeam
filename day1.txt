@@ -1,0 +1,350 @@
+
+
+	Java Programming language
+
+			- with Vishhal
+
+
+	spoken language
+
+			Language
+			|
+	---------------------------------
+	|	|	|	|	
+     listen   speaking reading writing
+	|	 |	   |	|	
+	concepts concepts  code	code
+
+
+		Java - 1994 
+		Today - 2023
+
+
+Day 1
+------
+
+	Introduction to Java
+	Features of Java
+	Your First Java code
+	Compiling the code
+	Running the Code
+	Simple Classes and Object
+
+
+
+			Java Technology
+				|
+		---------------------------------
+		|		|		|
+		JSE*E		JEE		JME
+		Core Java	Enterprise	Micro
+		|		|		|
+		Desktop		Distributed	Hand held 
+		Application	Application	devices
+		calculator	currency 	mobiles/laptops
+				converter	palmtops
+						- Android
+
+	Java Standard Edition
+	
+	Java Features
+	--------------
+	1. Simple 
+		no need to know the h/w (hardware details) 
+		no pointers 
+		no memory management
+
+	2. WORA
+		- write once run anywhere
+		platform neutral
+
+	3. Multithreaded
+
+		
+	4. Robust
+		- excpetion handling - ability to handle runtime errors
+		- automatic garbage collection
+
+	5. Distributed
+		- write programs for the network
+			programA on  machine1
+			other programB on another machine2
+
+			and programA and programB can communicate
+			with each other over the network
+
+	6. Object Oriented
+		KEY FEATURE
+		(all our 60 hours are around this feature)
+
+		What is an object?
+
+		
+		Object = physical state + behaviour
+			 ( data )       + functionality
+
+
+		cat  = color, age   +  sleeping()
+			weight		snoozing()
+			breed		drinkMilk()
+					chaseMice()
+
+
+
+		account = ac_type, ac_no + withdraw()
+			  ac_balance	   deposit()
+			  ac_holder_name   transfer()
+			  acholder_phone   getbalance()
+			  		   printStatement()
+
+
+
+
+		
+
+
+	1 listening + 2 speaking (chatting)
+
+	3 read the code
+	
+	4 write the code
+
+
+Your First Java Code
+----------------------
+
+the code name can be any name
+extension would be .java
+
+The fundamental unit of JAVA programming is a class
+
+
+
+
+
+
+
+STEP I : write your code
+
+First.java
+-----------
+1 public class First
+2 { 
+3	public static void main(String args[])
+4	{
+5		System.out.println("Hello everyone");
+6	}  
+7 } 
+
+line number 3 is a ready made line known to JAVA
+
+STEP II : compile your code
+
+	javac First.java
+	|
+	it will generate one code known as
+	|
+	First.class
+
+STEP III : run your code
+
+	java First
+
+
+
+
+
+
+
+
+
+
+
+
+
+public means available to the whole world / internet
+
+
+
+
+
+
+
+
+	In general life
+
+	Titles
+   =>	day	date		subject		time
+	---------------------------------------------
+	Monday  1-Jan-2003	Maths		10:00am
+	Tuesday 2-Jan-2003	History		10:00am
+	..
+	..
+	..
+	..
+
+	computer term
+
+	structure ExamTimeTable
+	{
+		day
+		date
+		subject
+		time
+	}
+
+	structure Fruit
+	{
+		color
+		type
+		weight
+		cost
+	}
+
+	class Cat
+	{
+		color
+		age
+		breed
+		weight
+		hungryOrNot
+			chaseMice() 
+			{
+ 
+			}
+			drinkMilk() 
+			{
+ 
+			}
+			snooze()
+			{
+
+			}
+			
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+
+
+
+
+
+
+	new job = new salary
+	new thril = excitement
+
+
+
+
+
+			
+
+
+
+
+
+	What is a class?		What is an object?
+	|				|
+	blueprint of the house		actual house1
+					another house2
+					third house3
+					...
+					..as many you want
+
+	design of your object		instance of the class
+
+	class Car
+	{
+	   numberPlate
+	   color
+	   cost
+	   numberOfSeats
+	   engineCC
+	   fuelType
+
+		drive() { }
+		reverseDrive() { }
+		changeGear() { }
+		accelerate() { }
+		turnRight() { }
+		turnLeft() { }
+		lockDoor() { }
+		unLockDoor() { }
+	}
+
+				Car myCarObj1 = new Car();
+				Car myCarObj2 = new Car();		
+				Car myCarObj3 = new Car();
+
+	blue print of a car		actual car in the memory
+
+
+
+
+
+
+		
+
+	
+
+
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
