@@ -324,18 +324,148 @@ public means available to the whole world / internet
 
 
 
+Day 2
+---------
+
+	1. data types
+	2. four types of basic functions
+	
+	3. integrate data types + these functions together
+	using a class
+
+	4. constructor function - prime
+
+	
+
+		Java Data Types
+			|
+	-----------------------------------
+	|	|	|	  |	  |
+   integral  floating  character boolean  String
+	|	|
+  --------	------
+  |		|     |
+  |		float double
+  |		4     8
+  |
+  byte  1 = 8 bits = 256 possibilities
+  short 2 = 16 bits = ...
+  int   4 = 32 bits = ..
+  long  8 = 64 bits = ...
 
 
+	byte rollNumber = 10 <-- it occupies only 1 byte
 
-		
+	and in 1 byte to can store a range of
 
+		-128 to 127 
+		-    to +
+	smallest	largest
 	
 
 
 
 
 
+
+
+	byte = how many bits = 8 bits
+
+
+	1 bit = binary digit
+
+	1 bit can be either off or on
+			    0   or 1
+
+
+	1 bit =		0
+			1
+
+	2 bits	= 	0 0 
+			0 1
+			1 0
+			1 1
+
+	2 friends = 	0 0
+			1 0
+			0 1
+			1 1
+
+	3 friends =	0 0 0		1 
+			0 0 1		2
+			0 1 0		3
+			0 1 1		4
+			1 0 0		5
+			1 1 0		6
+			1 0 1		7
+			1 1 1 		8
+
+	8 friends	= 256 possibilities
+
+	
+
+
 		
+	because of the space they occupy!!!
+
+
+	byte occupies 1 byte
+	short = 2 bytes
+
+	int = 4 
+
+	long = 8
+
+
+	long nurseryRollNumber = 50;
+	|
+	why to spend 8 bytes if this is always max as 50
+
+	
+
+---------------------------
+
+
+A function
+	
+	void functionName()
+	{
+		code here
+		to perform		
+		some job
+	}
+
+Four types of functions
+
+1. function without argument and without return value
+
+	void someThingToBeDone() 
+	{
+
+	}
+
+2. function with arguments and without return value
+
+	void multiplyThem(int a, int b)
+	{
+		int c = a * b;
+		System.out.println("product is :"+c);
+	}
+3. function with arguments and with return value
+
+	float divideThem(int a, int b)
+	{
+		float c = a / b;
+		return c;
+	}
+
+4. function without argument but with return value
+
+	float divideThem()
+	{
+		float c = 100/5;
+		return c;
+	}
 	
 
 
