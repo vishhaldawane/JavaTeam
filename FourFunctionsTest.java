@@ -1,21 +1,44 @@
 public class FourFunctionsTest {
     public static void main(String[] args) {
-        int x=100; //store it to a variable called as x
-        float y=80; // same into y
-        float z = x + y; // add these x and y into z
+        MyCalculator calci = new MyCalculator();
+        calci.addThem(50,4); //we are passing 100 and 20 via x and y
+        calci.addThem(60,8);
+        
+        calci.subtractThem(500,50);
+        calci.subtractThem(400,30);
 
-        System.out.println("x is "+x);
-        System.out.println("y is "+y);
-        System.out.println("z is "+z);// 180
-
-        z =  x-y; // 100-80 = 20
-        System.out.println("now z is "+z);
-
-        z = x * y; // 100*80 = 8000
-        System.out.println("now z is "+z);
-
-        z =  x / y; // 100/80 = 1  int/float yeild float
-        System.out.println("now z is "+z);
+        calci.multiplyThem(40,4);
+        calci.divideThem(45,3);
 
     }
+}
+class MyCalculator
+{
+    //function taking NO arguments/values
+    void doSomething() {
+        System.out.println("simple functions...");
+    }
+
+    //function taking arguments/values
+    void addThem(int a, int b)// these x and y are copied to a and b
+    {
+        int c = a+b;
+        System.out.println("addition is done : "+c);
+    }
+    void subtractThem(int a, int b)// these x and y are copied to a and b
+    {
+        int c = a-b;
+        System.out.println("subtraction is done : "+c);
+    }
+    void multiplyThem(int a, int b)// these x and y are copied to a and b
+    {
+        int c = a*b;
+        System.out.println("product is done : "+c);
+    }
+    void divideThem(int a, int b)// these x and y are copied to a and b
+    {
+        int c = a/b;
+        System.out.println("division is done : "+c);
+    }
+
 }
