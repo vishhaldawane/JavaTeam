@@ -28,9 +28,25 @@ public class TeacherTest {
 }
 class Camera
 {
-    void click1() {
-        System.out.println("Camera is clicked...");
+    String model;
+    int totalPicturesClicked;
+    String lensType;
+    int x;
+    int y;
+    void deletePics() {
+
+        System.out.println("x is "+x);
+        System.out.println("y is "+y);
+        totalPicturesClicked--;
     }
+    void click1() {
+
+        System.out.println("x is "+x);
+        System.out.println("y is "+y);
+        System.out.println("Camera is clicked...");
+        totalPicturesClicked++;
+    }
+
     void click2(int pictures) {
         System.out.println("camera clicked "+pictures+" Pics");
     }
@@ -86,3 +102,24 @@ class Teacher
         System.out.println("teacher is checking assignments..");
     }
 }
+/*
+    Naming convention in Java
+
+    ClassName - every word's first letter to be capitalized
+                e.g.,
+                Player, BankAccount, DriverManager
+
+    methodName - except the first word, all the successive
+                 word's initial letter to be capitalized
+
+                 playerShoeSize(), setLookAndFeel()
+                 openMyBankAccount(), clearTheScreen()
+
+    variable name - rule is same as of methodName
+
+                rollNumber, accountNumber
+                socialSecurityNumber
+
+
+
+ */
