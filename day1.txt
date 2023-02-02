@@ -470,6 +470,132 @@ Four types of functions
 
 
 
+Day 3
+------
+
+ClassName - every word's first letter to be capitalized
+                e.g.,
+                Player, BankAccount, DriverManager
+                
+    methodName - except the first word, all the successive
+                 word's initial letter to be capitalized
+                 
+                 playerShoeSize(), setLookAndFeel()
+                 openMyBankAccount(), clearTheScreen() 
+
+    variable name - rule is same as of methodName
+                
+                rollNumber, accountNumber
+                socialSecurityNumber
+
+
+			who
+			| ? employee/student/both | JAVA DEVELOPER
+		----------------
+		|		|
+		where[PLACE]	when [ TIME ]
+		|USA		|Jan/2023 Feb/Mar/Apr/....24 25 26 27...
+	---------------------------------
+	|		|		|
+	why		what		how
+	|REASON		| inFORMation	|implementation [ coding ]
+	why java class  | info		| APPLY IT
+	why data types	| knowledge	| wisdom
+	why methods	| know..	| wisdom
+	why 4 methods				|
+	why				  MNC is interested in the wisdom
+	why
+	why..
+	why..
+
+			"applied knowledge" is the wisdom
+
+
+	Agenda
+	---------
+	Integrate the data with functions inside a class
+
+
+
+
+
+
+	"non-static"
+
+
+
+	if you are a banker...
+
+	- you open a bank today
+
+	- no customers 
+
+	static(sharable) float rateOfInterest = 3.5 
+
+
+
+
+		impossible
+
+		possible
+
+		asynchronous
+
+		you are the sea shore
+			|
+		----------------------------------------------
+		|		|			|
+		eating		waching the sun set	holding her hand
+	
+
+		
+
+
+
+
+
+
+
+
+non-static	acno <-- 123	
+		acname<--sandeep
+		acbal<--5000
+			pnr/100
+
+non-static	acno <-- 334
+		acname<--ashok
+		acbal<---6000
+
+non-static	acno <-- 668
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
