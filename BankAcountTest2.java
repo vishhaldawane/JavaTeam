@@ -3,9 +3,17 @@ public class BankAcountTest2 {
 
         //data + functions
         Account accountObj1 = new Account(); //all the three variables are inside this
-
+        accountObj1.printAccount();
+        accountObj1.setAccount(123,"Sandeep Thapa",5000);
+        accountObj1.printAccount();
+        accountObj1.deposit(4000);
+        accountObj1.printAccount();
+        accountObj1.deposit(3000);
+        accountObj1.printAccount();
+        accountObj1.withdraw(500);
+        accountObj1.printAccount();
         //data + functions
-        Account accountObj2 = new Account();
+        /*Account accountObj2 = new Account();
 
         //data + functions
         Account accountObj3 = new Account();
@@ -17,6 +25,7 @@ public class BankAcountTest2 {
         accountObj1.printAccount();
         accountObj2.printAccount();
         accountObj3.printAccount();
+        */
     }
 }
 //prevention is better than cure
@@ -47,5 +56,92 @@ class Account // class is a design  of your objects
         System.out.println("my account balance : " + accountBalance);//print the field
         System.out.println("-------------------------");
     }
+    void withdraw(float amountToWithdraw)
+    {
+        System.out.println("withdrawing amount.....");
+        accountBalance = accountBalance - amountToWithdraw;
+    }
+    void deposit(float amountToDeposit)
+    {
+        System.out.println("depositing amount....");
+        accountBalance = accountBalance + amountToDeposit;
+    }
+// IT industry
+
+    //devops
+
+    // development -->   testing --> deploying --> Use
+    //   coder           tester      deployers     End User
+
+    //MNC
+    //body     + mind + intellect + soul + super soul
+    // |          |        |        |       |
+    //physical  <----------non-physical--------------->
+    //10%                   90%
+    //              |     |         |
+    //          icchha    gyan      atma    param atma
+    //          shakti    shakti    shakti  shakti
+
+    // dancer - dancing - dance
+
+    // coder  - coding - code
+
+    // painter - painting - paint
+
+
+
+
+
+
+
+
+
+
+
+
+// a dancer is lost, to create a dance
+
+    // to increase the typing speed
+    // typing tutor - download it  and practice 10 minutes everyday
+    //1999 - i went to typing institute - manual typewriter
+    //45
+
+    // by stopping the thoughts
+    // thousands of thoughts coming everyday
+    // in the mind, 70,000 each day..
+
+    // there are two Is
+
+    // YourSelf --- you loose it...
+
+    // Power OF NOW
+
+    // 7 to 8 times ...
+    // i found one secret in that book
+
+    // i applied it..
+
+    // how to stop the thoughts.....
+
+    // YOU HAVE TO OBSERVE YOUR THOUGHTS SOURCE
+
+    // FROM WHERE THESE THOUGHTS ARE COMING ????
+
+
+    // in 2006 it was
+    // super blessing
+
+    //practicing Power of NOW
+
+
+
+
 
 }
+
+
+
+
+
+
+
