@@ -4,14 +4,21 @@ public class BankAcountTest2 {
         //data + functions
         Account accountObj1 = new Account(); //all the three variables are inside this
         accountObj1.printAccount();
-        accountObj1.setAccount(123,"Sandeep Thapa",5000);
+      //  accountObj1.setAccount(123,"Sandeep Thapa",5000);
         accountObj1.printAccount();
+
         accountObj1.deposit(4000);
-        accountObj1.printAccount();
+        float newBalance = accountObj1.getBalance();
+        System.out.println("Now the new balance is : "+newBalance);
+
         accountObj1.deposit(3000);
-        accountObj1.printAccount();
-        accountObj1.withdraw(500);
-        accountObj1.printAccount();
+        float newBalance2 = accountObj1.getBalance();
+        System.out.println("Now the new balance is : "+newBalance2);
+
+        accountObj1.withdraw(1500);
+        float newBalance3 = accountObj1.getBalance();
+        System.out.println("Now the new balance is : "+newBalance3);
+
         //data + functions
         /*Account accountObj2 = new Account();
 
@@ -58,14 +65,27 @@ class Account // class is a design  of your objects
     }
     void withdraw(float amountToWithdraw)
     {
-        System.out.println("withdrawing amount.....");
-        accountBalance = accountBalance - amountToWithdraw;
+        System.out.println("withdrawing amount....."+amountToWithdraw);
+        if(amountToWithdraw > accountBalance) {
+            System.out.println("Insufficient balance...cannot withdraw");
+        }
+        else {
+            System.out.println("withdrawn...."+amountToWithdraw);
+            accountBalance = accountBalance - amountToWithdraw;
+        }
     }
     void deposit(float amountToDeposit)
     {
         System.out.println("depositing amount....");
         accountBalance = accountBalance + amountToDeposit;
     }
+    //with return   no argument
+    float getBalance()
+    {
+        System.out.println("returning the account balance....");
+        return accountBalance;
+    }
+
 // IT industry
 
     //devops
