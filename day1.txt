@@ -572,8 +572,187 @@ non-static	acno <-- 668
 
 
 
+Day 4
+---------------------------
 
 
+
+you learn anything
+you need practice
+
+
+no	poor	average		better		best
+1	2	3		4		5
+---->	--->	-->		--->		---->
+
+
+
+
+	thought	+ emotion	= action + result
+	|	   |		= apply	 + output
+java thoughts	 positive
+ ( concepts)	 by practicing
+		 more examples
+		( resolving 
+		  queries )
+
+
+Why would any company takes us as their part?
+
+
+
+	- To solve a problem
+	- particular problem
+
+	You have to find these problems
+	which you can solve
+
+	and become an expert of it
+
+	so that they would be ready to take you
+
+
+	by doing so you come into the VISIBILITY
+
+	in the market
+
+	THESE LINES ARE SPIRITUAL LINES
+
+
+	BECAUSE YOU ARE GOING TO HELP THEM
+
+
+	FIRST YOU HAVE TO HELP YOURSELF
+
+
+thoughts + emotions = action + result
+|		|	|	 |
+HERE	      HERE	typing  you see it on the screen
+			here
+
+	class AccountTest
+	{
+		public static void main(String args)
+		{
+			Account acObj1 = new Account();
+			Account acObj2 = new Account();
+			Account acObj3 = new Account();
+			Account acObj4 = new Account();
+			Account acObj5 = new Account();
+
+			acObj1.setAccount(11,"Jack",5000);
+			acObj2.setAccount(22,"Jane",6000);
+			acObj3.setAccount(33,"Janet",7000);
+			acObj4.setAccount(44,"Julie",8000);
+			acObj5.setAccount(55,"Robert",9000);
+		
+			acObj1.printAccount();
+			acObj2.printAccount();
+			acObj3.printAccount();
+			acObj4.printAccount();
+			acObj5.printAccount();
+	
+
+		}
+	}
+	class Account
+	{
+		private int acno;
+		private String holder;
+		private float acbal;
+
+		//its setting the data
+		//no return		with arguments
+		//MUTATOR
+		void setAccount(int x, String y, float z)
+		{
+			acno=x;
+			holder=y;
+			acbal=z;
+		}		
+
+		//NON-MUTATOR
+		void printAccount() 
+		{
+			System.out.println("ac no  is : "+acno);
+			System.out.println("holder is : "+holder);
+			System.out.println("ac bal is : "+acbal);
+		}
+
+		//MUTATOR
+		void withdraw(float amtToWithdraw)
+		{
+		        acbal = acbal - amtToWithdraw;
+		}
+
+		//MUTATOR
+		void deposit(float amtToDeposit)
+		{
+		        acbal = acbal + amtToDeposit;
+		}
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
