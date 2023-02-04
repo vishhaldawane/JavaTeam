@@ -694,92 +694,167 @@ HERE	      HERE	typing  you see it on the screen
 	}
 
 
+Day 5
+---------
+
+There are three types of programming constructs
+
+1. sequential based coding
+2. Selection based coding
+3. Iterative based coding
 
 
+1. Sequential
+
+	line1
+	line2
+	line3
+	line4
+	line5
+
+2. Selection
+
+	A
+
+	line1
+		if the condition is satified then it evalutes to true (boolean)
+	if(condition) <-- if this condition is satisfied only then line2 would run
+		line2
+			<-- if the conditin is not satisfied then line2 would be
+				skipped
+	line3
+	line4
+	line5
+
+	B
+		
+		line1
+
+		if(condition)
+		{
+			int x;
+			line2
+			line3
+			line4
+		}
+
+		variable x is not available here 
+		line5
 
 
+	C
 
+		line1
 
+		if(condition)
+			line2
+		else
+			line3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		line4
+		line5
 	
 
 
+		if(age>=18)
+			System.out.println("you can vote");
+		else
+			System.out.println("you can not  vote");
+
+
+	D
+		line1
+
+		if(condition)
+		{
+			line2
+			line3
+		}
+		else
+			line4
+
+		line5
+
+
+	E
+		
+		line1
+
+		if(condition)
+		{
+			line2
+			line3
+		}
+		else
+		{
+			line4
+			line5
+		}
+		line6
 
 
 
+		
+Operators
+-----------
+
+	binary operators
+	-----------------
+	+	10 + 3 = 13
+	-	10 - 3 = 7
+	*	10 * 3 = 30
+	/	10 / 3 = 3
+	%	10 % 3 = 1
+
+	relational operators
+	-------------------------
+	>  greater than
+	>= greater than or equal 
+	<  lesser than
+	<= lesser than or equal 
+	!= not equal 
+	=  equal
+
+	unary operator
+	----------------
+
+	logical operator
+	------------------
+		&&	<--- logical and
+		!	<--- logical or 
 
 
 
+		if( condition1 && condition2 )
+		{
+			do this job
+		}
+		else	
+		{
+			do this another job
+		}
 
 
+		if ( condition1 | condition2 )
+		{
+			do this
+		}
+		else
+		{
+			do that
+		}
+--------------------------------------
 
+	line0
 
+	if(condition1)
+		line1
+	else
+		if(condition2)
+			line2
+		else
+			line3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	line4
 
 
