@@ -1,0 +1,27 @@
+
+
+
+
+
+1   find out the highest value out of these
+	 a=5
+   	b=4
+   	c=8
+
+	- use class way designing technique to solve this
+
+2   make a calculator to find out 
+	the simple interest
+	the compound interest
+
+	- assume the values of p, n and r as per your imagination	
+	- use class way designing technique to solve this
+
+3   find out if the employee has 
+		low scale -> L
+		mid scale -> M
+		high scale salary -> H 
+		based on the values of your choice/imagination
+
+	- use class way designing technique to solve this
+	
