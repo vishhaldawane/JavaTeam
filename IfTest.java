@@ -7,8 +7,14 @@ public class IfTest {
         System.out.println("Begin with main");
         //operand1 >= operand2
 
+        // if the age is in the range of 1 to 120 == its valid human age
+
+        // if the age is in the range of 18 to 120 ==its valid for voting
+
+        // if its below 0 or above 120 == its invalid human age
+
         if(age < 0)
-            System.out.println("Invalid human age");
+            System.out.println("Human age cannot be negative...");
         else
         {
             if (age > maxHumanAge)
