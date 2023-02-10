@@ -857,4 +857,190 @@ Operators
 
 	line4
 
+---------------------------------
+
+	OOPS
+	
+	1. Abstraction
+		hiding the complexity of an object
+		providing the simplicity of an object via simple
+		accessible functions
+		eg. User of an ATM executes withdrawCash()
+
+	2. Encapsulation
+		coding the complexity of an object
+		binding of data and functions togethers
+		eg. ATMEngineer develops the coding of withdrawCash()
+
+	3. Polymorphism
+		ability of any business entity to have many forms
+		a. function overloading
+			many dial functions in the Phone class
+
+		b. function overriding
+			let the subclass re-define a function which has the same name
+			as of the super class's function
+		
+			class Doctor
+			{
+				void diagnose() {
+					System.out.println("checking ENT");
+				}
+			}
+			class Surgeon extends Doctor
+			{
+				void diagnose() {
+					super.diagnose();
+					System.out.println("checking the wound..");
+				}
+			}
+
+		c. ???
+		
+	4. Inheritance
+		ability of any business entity to acquire properties
+		from existing business entities
+
+	5. Object communication
+
+
+		Inheritance
+
+
+
+			Doctor
+			  |
+			  | diagnose() { ENT check }
+			  | prescribe() { RGB pills }
+			  | chargeFees() { 100/200 INR / $3 }
+		-----------------
+		|
+		|
+	   GeneralSurgeon 
+		| diagnose() { ENT check + check wound }
+		| prescribe() { rgb bills + blood reports + scans }
+		| chargeFees() { 500/800/1500 / $10 }
+		| surgery() { }
+	-----------------------------------
+	|		|		|
+	HeartSurgeon	NeuroSurgeon  Orthopedician
+	|
+	 diagnose() { ENT check + bp + scans + ecg report + sugar rpts }
+	 prescribe() { rgb bills + bp reports + scans + less oil + gym + yoga + ....}
+         chargeFees() { 3000/5000 / $30 }
+	 surgery() { }
+	 doHeartSurgery() { }
+         doOpenHeartSurgery() { }
+	 angioplasty() { }
+         angioGraphy() { }
+
+
+
+
+
+			BankAccount (super/base)
+			     | acno,acholder,balance
+			     | withdraw(){}
+			     | deposit() { }
+		----------------------------------------
+		|		|		|
+	SavingsAccount    CurrentAccount    CreditCardAccount  (sub/derived)
+	   interestRate       overdraftLimit      creditLimit
+						  cashLimit
+	    withdraw(){ }	withdraw(){}    withdraw(){}
+	    deposit() { }
+	    calcSI(){}
+
+
+
+
+
+
+
+			LivingBeing
+			   |breathing()
+----------------------------------------------
+|	|	|		   |         
+Fish	Bird	Tree		 Animal
+		|		   | eat(){} sleep(){} reproduce(){}
+	----------------	--------------------
+	  |	     |		   |		|
+	Rose	 Coconut	Mammal		Reptile
+				   | giveBirth()     | layEggs(){}	
+				-----------------    ---------------
+				   |		|	|        |
+				 Human		Tiger Crocodile Snake
+				   | think(){}
+				Person
+				 |
+				 | personalDevelopment(){}
+				 |
+			-----------------
+			|
+			Student
+			|  study(){}
+			|  doAssignments(){}
+			|  read(){}  
+			|  write(){}
+			|			
+		---------------
+		|
+		Employee
+		| doProjectWork(){}
+		|
+	--------------------
+	|
+	Executive
+	    | executePlans(){}
+	    |
+	  Manager
+		|managePlans(){}
+		Director
+		   directPlans(){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
