@@ -1003,13 +1003,84 @@ Fish	Bird	Tree		 Animal
 
 
 
+		Photographer
+			| int numberOfPics
+			| void clickPicture() { }
+		-----------------------
+		|
+	Cinematographer
+		| int numberOfClips;
+		| void recordVideo() { }
+
+
+
+
+
+Package 
+----------
+
+	package is similar to directories of the operating system
+	|			(directory is nothing but any folder of the os)
+	|				|			|
+	java				OS			OS
+
+
+	the main purpose of package/folder is to organize your classes
+
+	we should not keep all the classes in a single package or folder
+
+	we should keep all our relevant classes in a particular folder
+
+
+	main-folder	  	my   <-- main package
+				|
+		--------------------------------------------
+		|	|	|	|	|	 |
+sub-folders-->	self	family office  friends  relative songs<-- sub packages
+		|	|	|	 |	 |
+		Post   Father	Boss	 Mutual Uncle
+		Text   Mother	Project  Close  Aunty
+		Story  Wife	Computer 	Cousin
+		Photos Daughter 
+
+	main-package		jungle
+				|
+		---------------------------------------------
+		|	  |		|		|		
+  subpackage	wild	  domestic	reptiles	birds
+		|	   |		|		|
+  classes-->	Tiger	  Hen		Snake		Parrot
+		Lion	  Cow		Crocodile	Sparrow
+
+
+	package name must be in small case
+	PACKAGE NAME CANNOT HAVE SPACES
+		E.G.    you cannot make a package like  -> my.songs
+
+	DOT sign is the separator of parent and child folder 
+
+		jungle.wild
+		jungle.domestic
+		jungle.reptiles
+		jungle.birds
+
+						
+	
 
 
 
 
 
 
+		
 
+
+
+				
+
+
+
+	
 
 
 
