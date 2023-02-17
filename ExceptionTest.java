@@ -64,5 +64,64 @@ public class ExceptionTest {
         fruit is alkaline
         meal is acidic
 
+    Lets understand the hierarchy of exceptions
+
+                        Object
+                            |
+                         Throwable
+                            |
+                   --------------------
+                   |                |
+                Error           Exception (checked)
+                                    | handle it in the catch block
+                       -------------------------
+                       |
+                 RuntimeException (unchecked)
+                    |
+      --------------------------
+      |                 |    |
+  NullPointerException  |  ArithmeticException
+                        |
+                 IndexOutOfBoundsException
+                        |
+             -------------------------------
+             |                          |
+   StringIndexOutOfBoundsException    ArrayIndexOutOfBoundsException
+
+      checked   = checked by the compiler
+      unchecked = not checked by the compiler
+
+        if you are going for a longDrive() - 300 kms
+
+      checked           vs              unchecked
+      |                                  |
+   before drive                         flatTyre (runtime)
+   - check "spare wheel" state          exceed speed limit
+   - fuel up to date                    check post of police
+   - weather condition                  highway ticket
+   - tyre pressure                      sudden weather change
+   - check engine oil                   engine failure
+   - check brake state                  sudden lane change
+   - check your car's rear light        accident
+   - check audio system
+   - check GPS
+
+
+
+             if you are going for a shortDrive() - 3 kms
+
+
+              setting up for a  physical book library
+
+      checked                               unchecked
+      |                                     |
+    set up automated                     manually driven
+    fire extinguisher                    fire extinguisher
+     (detects the fire/smoke)           ( a fire marshall is
+                                            required )
+
+
+
+
 
  */
