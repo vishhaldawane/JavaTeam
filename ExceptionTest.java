@@ -104,6 +104,7 @@ public class ExceptionTest {
    - check brake state                  sudden lane change
    - check your car's rear light        accident
    - check audio system
+                                        - status of the fog
    - check GPS
 
 
@@ -121,7 +122,32 @@ public class ExceptionTest {
                                             required )
 
 
+    Java has hundreds and thousands of classes
+    scattered all over across various directories [ packages ]
+    - they are ready made classes for us
+    - they are known as API - application programming interfaces
 
+
+    if you want to make your own exception, ie user defined / custom exception
+
+    then decide which type of exception you want to make
+
+                    checked         or      unchecked?
+
+
+ ready made->        Doctor                  Engineer
+                    Exception               RuntimeException
+
+    class Surgeon extends Doctor        class MechanicalEngineer extends Engineer
+    {                                   {
+
+    }                                   }
+
+                                        class InsufficientBalanceException extends
+                                                RuntimeException
+                                        {
+
+                                        }
 
 
  */
