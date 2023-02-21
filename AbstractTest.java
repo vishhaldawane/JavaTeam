@@ -5,13 +5,13 @@ public class AbstractTest {
        // e.g
       //  GeometricalShape geometricalShape = new GeometricalShape();
 
-      Circle circle = new Circle();
+      Circle circle = new Circle(100);
       circle.calculateArea();
 
-      Rectangle rectangle = new Rectangle();
+      Rectangle rectangle = new Rectangle(50,60);
       rectangle.calculateArea();
 
-      Triangle triangle = new Triangle();
+      Triangle triangle = new Triangle(40,80);
       triangle.calculateArea();
 
      // Fish fish = new Fish(); //not possible, because in reality such Fish doesnot exist
@@ -78,27 +78,54 @@ abstract class GeometricalShape //abstract image drawn by me
 //and child class is an interpretation of that abstract idea
 class Circle extends GeometricalShape //1st interpretation - FloatingIce
 {
+    int radius; //each circle has a radius
+
+    public Circle(int radius) { //constructor to set the radius
+        this.radius = radius;
+    }
+
     @Override
     void calculateArea() {
         System.out.println("calculating area of a circle....");
+        float area = 3.14f * radius * radius; //real time calculation
+        System.out.println("area of a circle is : "+area);
     }
     //PI *r *r
 }
 class Rectangle extends GeometricalShape //2nd interpretation - Face
 {
+    int length;
+    int breadth;
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
     @Override
     void calculateArea() {
         System.out.println("calculating area of a rectangle....");
+        float area = length * breadth;
+        System.out.println("area of rectangle is : "+area);
 
     }
     //l*b
 }
 class Triangle extends GeometricalShape//2nd interpretation - Plasma
 {
+    int base;
+    int height;
+
+    public Triangle(int base, int height) {
+        this.base = base;
+        this.height = height;
+    }
+
     @Override
     void calculateArea() {
         System.out.println("calculating area of a triangle....");
-
+        float area = 0.5f * base * height; //assuming right angled triangle
+        System.out.println("area of a triangle is : "+area);
     }
     //1.5 * b* h  for right angled triangle
 }
