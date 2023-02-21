@@ -160,3 +160,39 @@ class Shark extends Fish {
         System.out.println("shark is breathing via gills..in rapid way......");
     }
 }
+abstract class Room //20 children
+{
+    int height;
+    int width;
+
+    abstract void calcArea();
+
+    public Room(int height, int width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+class BedRoom extends Room{
+   String  typeOfBed;
+
+    public BedRoom(int height, int width, String typeOfBed) {
+        super(height, width);
+        this.typeOfBed = typeOfBed;
+    }
+
+     void calcArea() {
+
+     }
+}
+
+class SchoolRoom extends Room {
+    int numberOfBenches;
+
+    public SchoolRoom(int height, int width, int numberOfBenches) {
+        super(height, width);
+        this.numberOfBenches = numberOfBenches;
+    }
+     void calcArea() {
+
+    }
+}
