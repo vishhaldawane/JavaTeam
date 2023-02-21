@@ -59,47 +59,86 @@ interface Singing {
 class Person implements Listening, Talking, Singing { //must override since the direct child
 
     @Override
-    public void listens() { //mandatory
+    public void listens() { //MANDATORY
         System.out.println("person is listening...");
     }
 
     @Override
-    public void talks() { //mandatory
+    public void talks() { //MANDATORY
         System.out.println("person is talking...");
     }
 
     @Override
-    public void sing() {
+    public void sing() {//MANDATORY
         System.out.println("Person is singing....");
     }
 }
 class Student extends  Person implements Studying, ProblemSolving {
     @Override
-    public void study() {
+    public void study() {//MANDATORY
         System.out.println("student is studying...");
     }
 
     @Override
-    public void solveProblems() {
+    public void solveProblems() {//MANDATORY
         System.out.println("student is solving java problems...to get a dream job");
 
     } //student may or may not override
 
+    @Override
+    public void listens() {//NOT-MANDATORY
+        System.out.println("student is listening...");
+    }
+
+    @Override
+    public void talks() {//NOT-MANDATORY
+        System.out.println("student is talking...");
+    }
+
+    @Override
+    public void sing() {//NOT-MANDATORY
+        System.out.println("student is singing.....");
+    }
 }
 class Employee extends Student implements Working, GettingPaid, SigningIn {
 
     @Override
-    public void work() {
+    public void work() { //MANDATORY
         System.out.println("Employee is working...if u love your job, then enjoy it...");
     }
 
     @Override
-    public void getSalary() {
+    public void getSalary() {//MANDATORY
         System.out.println("getting salary.....");
     }
 
     @Override
-    public void sign() {
+    public void sign() {//MANDATORY
         System.out.println("Employee is signing-in in the office...");
+    }
+
+    @Override
+    public void study() {//NOT-MANDATORY
+        System.out.println("Employee is studying ...");
+    }
+
+    @Override
+    public void solveProblems() {//NOT-MANDATORY
+        System.out.println("Employee is solving problem... ...");
+    }
+
+    @Override
+    public void listens() {//NOT-MANDATORY
+        System.out.println("Employee is listening... ...");
+    }
+
+    @Override
+    public void talks() {//NOT-MANDATORY
+        System.out.println("Employee is talking ...");
+    }
+
+    @Override
+    public void sing() {//NOT-MANDATORY
+        System.out.println("Employee is singing ...");
     }
 }
