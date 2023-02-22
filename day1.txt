@@ -1065,12 +1065,110 @@ sub-folders-->	self	family office  friends  relative songs<-- sub packages
 		jungle.birds
 
 						
+abstract class
+|
+- incomplete
+- partial
+- imaginary
+
+	- what is an abstract class
+
+	- in abstract class one can have "abstract methods"
+		plus "non-abstract methods"	
+
+
+
+interface = is a "pure" abstract class
+		
+- pure incomplete
+- pure partial
+- pure imaginary
+
+	- but interfaces can "only have abstract methods"
+	- by default all methods are abstract
+
+
+	one thumb rule in java is 
+	"one child can only have one father class"
+
+	one child can have multiple fathers
+
+class A
+{
+}
+class X
+{
+}
+
+class B extends A,X <-- invalid line
+{
+
+}
+
 	
 
 
+A "reference To a super class" can also hold the "object of the child class."
+BUT USING THIS REFERENCE U CAN ONLY INVOKE METHODS OF THAT REFERENCE TYPE
+
+	Doctor refToDoctor = new Surgeon(); <--is Surgeon a Doctor???;
+		|		   |	
+		superclass	object of child class
+		
+		refToDoctor.diagnose(); //Surgeon's diagnose is invoked..
+		refToDoctor.prescibe(); //Surgeons'
+		refToDoctor.chargeFees(); //Surgeon's
+		refToDoctor.doSurgery(); //INVALID
+
+	
+	class Doctor {				//Doctor is always a Doctor
+		void diagnose() { }		//not more than that
+		void prescribe(){}
+		void chargeFees() { }
+	}
+	class Surgeon extends Doctor {			//every Surgeon isA Doctor
+		void diagnose() { } //overriding
+		void prescribe(){} //overriding
+		void chargeFees() { } //overriding
+		
+		void doSurgery(); //exclusive
+	}
+	class HeartSurgeon extends Surgeon {{		//every HeartSurgeon isA Surgeon
+		void diagnose() { } //overriding	//so that also isA Doctor
+		void prescribe(){} //overriding
+		void chargeFees() { } //overriding
+		
+		void doSurgery(); //overriding
+
+		void doHeartSurgery() { } //exclusive
+	}
 
 
 
+				LivingBeing
+                                        |
+                                --------------------
+                                |               |
+                                Animal          Tree
+                                |
+                                | eat(), sleep(), fear(), reproduce()
+                --------------------------------------------------
+                |               |               |               |
+              Mammal            Bird            Fish            Reptile
+                |giveBirth()    |layEggs();     |layEggs()      |layEggs()
+                |walk();        |fly();         |swim()         |crawl();
+        -----------------       ---------       ---------       ----------------
+        |               |       |       |       |       |       |             |
+        Human           Dog     Sparrow Parrot  Shark SwordFish Snake     Crocodile
+        think()         bark()  chrp()  mimick() swim1() swim2() throwVenum() biteJaw(){}
+        |
+        Person                                                  |               |
+        |
+        Student
+        |
+        Employee
+
+	
 
 		
 
