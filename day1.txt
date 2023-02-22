@@ -1168,9 +1168,47 @@ BUT USING THIS REFERENCE U CAN ONLY INVOKE METHODS OF THAT REFERENCE TYPE
         |
         Employee
 
-	
+
+
+static data member
+------------------
+
+        - declared inside the class
+        - they belong to the class's design
+        - they are not the part of an object's field
+
+        - they pre-loaded before any object
+        - they remain in the memory even the object is lost
+
+        - so how to refer them?????? if they are private?????
+
+
+static member functions
+-------------------------
+        - they are not belong to the object
+        - they are of the class
+        - they can be called via classname.functionname
+
+
 
 		
+  A                       B                       C
+------------------------------------------------------------------
+        final                   static                  abstract
+------------------------------------------------------------------
+field   cannot be               shared fields           ---
+        changed/                across all the          ---
+        constants               objects                 ---
+------------------------------------------------------------------
+method  cannot be
+        overridden
+        by the child
+------------------------------------------------------------------
+class   class cannot
+        become father
+------------------------------------------------------------------
+
+
 
 
 
