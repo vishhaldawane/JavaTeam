@@ -1,0 +1,47 @@
+
+
+
+	User management
+	-------------------------
+	1. Create a user
+	2. view the user
+	3. View all the users
+	4. modify the user
+	5. delete the user
+	6. Exit the app
+
+
+
+	1. Create a user
+
+		Enter useremail
+		Enter password
+		Enter date of birth
+		Enter gender
+		Enter address
+
+		Save It
+
+	2. View the user
+		Enter the useremail :
+		->based on that email, we will have to show the user details
+
+	3. View all teh users - should show all the users
+
+	4. Modify the user
+		Enter the useremail :
+		->based on that email, we will have to show the user details
+		Enter new address :
+		Enter new password :
+
+		the above two fields must be changed
+
+	5. Delete the user:
+		Enter useremail : 
+		on entering email, user should be deleted
+
+	6. Exit
+		on pressing 6 user should be existing the application
+
+
+
