@@ -1218,6 +1218,118 @@ class   class cannot
 
 	
 
+Multithreading
+-----------------
+
+	Thread = a series of statements to run
+		- or a program
+		- or a logic
+
+	You are at a Cash Deposit Counter
+
+Book Of Records
+----------------
+		WHEN THE TELLER3 COMES HERE
+		HE/SHE WILL AQUIRE A LOCK ON THIS RECORD
+		BY KEEPING HIS/HER BOOKMARK SAYING THAT THIS
+		RECORD OF SURESH IS BEING USED BY ME, SO
+		DO NOT REFER THE VALUES UNTIL I REMOVE MY BOOKMARK
+		(OCCUPIED[RED]/VACANT[GREEN])
+		|
+101 Suresh $5000 (this updation done by teller3 is unknown to teller2/1)
+	 	|
+		NOW THE TELLER1 HAS COME AND OBSERVED A BOOKMARK
+		KEPT BY TELLER3
+		HENCE TELLER1 IS AWAITING FOR THE BOOKMARK TO BE 
+		REMOVED BY THE TELLER3
+
+		NOW THE TELLER2 HAS ALSO COME AND OBSERVED TELLER1
+		IN THE QUEUE, AND ALSO AWAITING FOR THE BOOKMARK
+		TO BE REMOVED BY TELLER3, AND COMPLETIONOF TELLER1 ALSO  
+
+	THIS PROCESS IS CALLED AS THREAD SYNCHRONIZATION
+
+
+	$5500 (this updation done by teller1 is unknown to teller2/3)
+	 $5700 (this updation done by teller2 is unknown to teller3/1)
+
+	the final balance seen by Suresh is $5700???
+	WHAT SHOULD BE THE REAL BALANCE 
+		$5000+800 = 5800
+
+		$5800+700 = 6500
+
+		$6500+500 = 7000 <-- MUST BE THE FINAL BALANCE!!!
+		
+102 Dinesh $6000
+103 Rutesh $7000
+104
+...
+
+Multithreaded cash deposit counter
+
+	A thread
+	is running
+	|
+10mnt	Teller1		Teller2		Teller3
+	|		|		|
+	getBalance()	getBalance()	getBalance()
+	|$5000		|$5000		|$5000
+	|		|		|
+	calcBalance()	calcBalance()	calcBalance()
+	|newBal=5000+500|newBal=5000+700|newBal=5000+800
+	|faster		|fast		|fastest
+	|		|		|
+	setBalance()	setBalance()	setBalance()
+	|accBal=newBal	|accBal=newBal	|accBal=newBal
+	|		|		|
+	Customer1	Customer2	Customer3
+	|		|		|
+Time	10.00am		10.00am		10.00am
+Cash	$500		$700		$800
+A/c	101		101		101
+Deno	$20currencies   $10		$100
+notes	25notes		70notes		8notes
+	|
+	Customer4
+	|
+	10.00.0am
+	
+	Customer4
+	...
+	..
+	.
+	TWO CHEFS SPOILS THE DISH
+	|
+CHEF1		CHEF2
+|		|
+ADDED		???
+THE SALT
+
+	
+java.lang package
+
+
+
+		Runnable <--interface
+		|run(); <-- declared
+		|
+    ------------+
+    |		|	
+    |		Thread  <--- class
+    |		|start() { }//we have to invoke this function
+Toy |		|run() { } //mandatory | they have written
+|   |	--------------------------
+|   |	|	|	|
+MyBike	Bike	Car	MyMessage
+	run(){}	run(){} run(){} // not mandatory | but we have overridden
+
+		
+	Walkable
+	|walk();
+	|
+	Walker
+	|walk(){}
 
 
 
@@ -1232,10 +1344,21 @@ class   class cannot
 
 
 
+			Writable[i]		Stone
+			|write();		|
+			|			|
+	---------------------------------------------
+	|				|
+	Pen				Chalk
+	|write(){}//mandatory		|write(){} //mandatory
+	|
+	FountainPen
 
 
-
-
+	Writable w = new Pen();
+	w.write();
+	w = new Chalk();
+	w.write();
 
 
 
