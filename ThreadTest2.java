@@ -19,6 +19,14 @@ public class ThreadTest2 {
         Bike bike2= new Bike("Sandeep"); //3
         Bike bike3 = new Bike("Sujan"); //3
 
+        MyBike myBike = new MyBike("HotWheels Toy Bike");
+        Thread thread = new Thread(myBike); //myBike is Runnable
+
+        thread.start(); // thread is aware where is the myBike [ see line 23]
+        bike1.start(); //inter-thread communication has to happen if you want to control the output
+        bike2.start();
+        bike3.start();
+
         Car car = new Car(); //3
         Train train = new Train(); //3
         Aircraft aircraft = new Aircraft(); //3
@@ -29,9 +37,7 @@ public class ThreadTest2 {
         //1st chef making the base of the pizza
 
 
-        bike1.start(); //inter-thread communication has to happen if you want to control the output
-        bike2.start();
-        bike3.start();
+
 
         /*car.start();
         train.start();
@@ -39,6 +45,29 @@ public class ThreadTest2 {
         boat.start();*/
 
         System.out.println("End of main.....");
+    }
+}
+
+class Toy
+{
+
+}
+class MyBike extends Toy implements Runnable { // a toy bike of a kid also want to become a thread
+
+    String str;
+
+    MyBike(String s) {
+        str = s;
+    }
+    public void run() {
+        for(int i=1;i<=100;i++) {
+            System.out.println(str+" My Toy Bike is also running....");
+//            try {
+//                Thread.sleep(3);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+        }
     }
 }
 
@@ -53,6 +82,11 @@ class Bike extends Thread { //1 isA
     public void run() {//2
         for (int i=1;i<=100;i++) {
             System.out.println(rider+" on Bike, is running...." + i);
+//            try {
+//                Thread.sleep(3);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
     }
 }
