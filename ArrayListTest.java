@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class ArrayListTest {
@@ -11,11 +12,14 @@ public class ArrayListTest {
 
         //its growable array...size would keep on increasing as per the add functions
         ArrayList myPlayList = new ArrayList(); // no [] management here....wow
+        //stack of a plate
+
+       //LinkedList myPlayList = new LinkedList();
 
         //bank transactions, logs, account creation, number of deposits...infinite...
 
         System.out.println("adding songs....");
-        myPlayList.add(song1);
+        myPlayList.add(song1); //add is a ready made function to append object at the end of the list....
         myPlayList.add(song2);
         myPlayList.add(song3);
         myPlayList.add(song4);
@@ -23,7 +27,7 @@ public class ArrayListTest {
         System.out.println("songs are added....");
 
         for(int i=0;i<myPlayList.size();i++) {
-            System.out.println("song is : "+myPlayList.get(i));
+            System.out.println("song is : "+myPlayList.get(i)); //read made get() to access the element of the specified index
         }
 
         System.out.println("keep on adding now...");
