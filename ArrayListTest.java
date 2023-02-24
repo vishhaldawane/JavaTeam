@@ -48,14 +48,29 @@ public class ArrayListTest {
             Scanner scan = new Scanner(System.in);
             System.out.println("Enter song title : ");
             String songTitle = scan.nextLine(); //accept from keyboard
-            Song songObj = new Song(songTitle); // store this title in the song object
+
+            Scanner scan2 = new Scanner(System.in);
+            System.out.println("Enter song artist : ");
+            String songArtist = scan.nextLine(); //accept from keyboard
+
+
+            Scanner scan3 = new Scanner(System.in);
+            System.out.println("Enter song album : ");
+            String songAlbum = scan.nextLine(); //accept from keyboard
+
+
+            Scanner scan4 = new Scanner(System.in);
+            System.out.println("Enter song year : ");
+            int songYear = scan.nextInt(); //accept from keyboard
+
+            Song songObj = new Song(songTitle,songArtist,songAlbum,songYear); // store this title in the song object
 
                 System.out.println("Adding this song into the play list....");
                 myPlayList.add(songObj); //add this song into the play list
 
-            Scanner scan2 = new Scanner(System.in);
+            Scanner scan5 = new Scanner(System.in);
             System.out.println("Press 0 to add more or 1 to exit : ");
-            choice = scan2.nextInt();
+            choice = scan5.nextInt();
 
         } while(choice!=1);
 

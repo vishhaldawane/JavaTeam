@@ -8,16 +8,35 @@ public class ArraysOfObjectTest {
         Cricketer cricketer4 = new Cricketer(4,"Dhoni","India",112);
         Cricketer cricketer5 = new Cricketer(5,"Yuvraj","India",79);
       */
-        Cricketer cricketTeam[] = new Cricketer[5]; //IInd way - 5 references are created
-        cricketTeam[0] = new Cricketer(1,"Sachin","India",89,50.5f);
-        cricketTeam[1] = new Cricketer(2,"Virat","India",85,45.6f);
-        cricketTeam[2] = new Cricketer(3,"Sehvag","India",95,90.5f);
-        cricketTeam[3] = new Cricketer(4,"Dhoni","India",112,99.5f);
-        cricketTeam[4] = new Cricketer(5,"Yuvraj","India",79,78.5f);
+        Cricketer cricketTeam[] = new Cricketer[11]; //IInd way - 5 references are created
+        try {
+            // 0 1 2 3 4 5 6 7 8 9 10
+            // i i n i i i n n n i n  = 5 are null and 6 are intialized
 
-        for (int i=0; i<cricketTeam.length;i++) {
-            System.out.println(cricketTeam[i].getPlayerName()+" from "+cricketTeam[0].getCountry()+ " made "+cricketTeam[0].getCurrentScore()+" runs whose strike rate is "+cricketTeam[i].getStrikeRate());
+            cricketTeam[4] = new Cricketer(1,"Sachin","India",89,50.5f);
+            cricketTeam[0] = new Cricketer(2,"Virat","India",85,45.6f);
+            cricketTeam[1] = new Cricketer(3,"Sehvag","India",95,90.5f);
+            cricketTeam[5] = new Cricketer(4,"Dhoni","India",112,99.5f);
+            cricketTeam[9] = new Cricketer(5,"Yuvraj","India",79,78.5f);
+
+        //there is no room for this new 6th object
+
+            cricketTeam[3] = new Cricketer(6, "Jack", "Some", 74, 48.5f);
         }
+        catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("Handler : "+e); //e means exception name + msg
+        }
+
+       // try {
+            for (int i = 0; i < cricketTeam.length; i++) {
+                if (cricketTeam[i] != null) {
+                    System.out.println(cricketTeam[i].getPlayerName() + " from " + cricketTeam[0].getCountry() + " made " + cricketTeam[0].getCurrentScore() + " runs whose strike rate is " + cricketTeam[i].getStrikeRate());
+                }
+            }
+        //}
+        /*catch(NullPointerException e) {
+            System.out.println("Object is null");
+        }*/
     }
 }
 
