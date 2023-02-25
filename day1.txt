@@ -1373,4 +1373,65 @@ MyBike	Bike	Car	MyMessage
 
 
 
+---------
+
+
+
+				Collection [ Animal ]
+				   |add();	breathing();
+			-------------------------
+			|duplicates	        |unique
+			List [ Mammal ]	       Set [ Reptile ]
+			| giveBirth();		|    layEggs();
+		-----------------	------------------
+		|		|	|		|
+	   ArrayList	  LinkedList  TreeSet	     HashSet [ like a book shelf]
+	    add()		add()	add()		add()
+		Human             Dog        Snake         Crocodile
+	    
+
+			Map
+			| < Key and Value> pair
+		-----------------
+		|		|
+	    TreeMap		HashMap
+
+		ind -> for India and other details
+		nep -> for Nepal and other details
+
+
+		In any apartment
+			- at the reception/ground floor
+			Name Board of the residents 
+			
+		---------------------------
+		|	ground floor	  |
+		---------------------------			
+		| G101 : Om Prakash       |key1 ...actual Om Prakash is in his house
+		| G102 : Jack		  |key2
+		| G103 : Jane             |key3...
+		---------------------------
+		|      first floor        |
+		---------------------------
+		| F101  : Sameer ..	   key4 is pointing to the actual first floor
+						where sameer is living
+
+
+
+				..
+				...
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 
