@@ -1422,10 +1422,73 @@ MyBike	Bike	Car	MyMessage
 				...
 
 
+File handling
+
+		input and output stream
+		|	   |	    |	
+		reading   writing  flow 
+		|		|
+		keyboard	monitor <-- always data is written here
+		(std)		printer
+		|		plotter
+		always		(std)
+		data is
+		read from here
 
 
+
+
+	Keyboard					Monitor
+	|System.in					|System.out
+	+------------>------------||||------------->-----
+		input/reading	  ||||   output/writing
+			Your Java Application
+				  ||||
+				  |  |
+				  |  |
+		------>------------  ---------->-----
+		|  input/read		        outpt|/write
+	1	Hard drive			Hard drive
+		(file/directories)		(file/directories)
+
+	2	Network socket			Network socket
+
+	3	Memory				Memory
+
+
+			file input / ouput stream classes
+
+java.io package
+
+----------------------------------------------------------------------------------
+	BYTE BASED STREAM		||	CHARACTER BASED STREAM
+					||
+	min unit of i/o is 1 byte	||	min unit of i/o is 1 char=2 bytes
+	ASCII - 256 characters		||	UNICODE - 65535 character
+	local english letters		||	international character set
+----------------------------------------------------------------------------------
+ InputStream		OutputStream	||	Reader		Writer		
+	    read();	write();	||	 read();	write();
+----------------------------------------------------------------------------------
+FileInputStream		FileOutputStream||   FileReader		FileWriter
+----------------------------------------------------------------------------------
+ObjectInputStream     ObjectOutputStream||
+----------------------------------------------------------------------------------
+					||
+----------------------------------------------------------------------------------
+					||
+----------------------------------------------------------------------------------
 
 			
+same code of file handling you can try with FileReader/FileWriter
+
+
+		Object Serialization Process
+
+			- storing the PRIVATE data of an object into the file
+
+
+	ObjectOutputStream	ObjectInputStream
 
 
 
