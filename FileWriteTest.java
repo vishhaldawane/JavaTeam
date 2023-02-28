@@ -8,7 +8,7 @@ public class FileWriteTest {
 
         try {
             System.out.println("trying to open a file in WRITE mode...");
-            FileOutputStream fout = new FileOutputStream("fun.txt", true); //if the file is already present, it would overwrite it, that's risky
+            FileOutputStream fout = new FileOutputStream("fun.txt",true); //if the file is already present, it would overwrite it, that's risky
                                 // so use true to prevent this over-write
             System.out.println("file is ready in WRITE mode");
 

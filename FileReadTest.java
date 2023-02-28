@@ -8,9 +8,9 @@ public class FileReadTest {
         //1st step to open the file in READ mode
         try {
             System.out.println("trying to open a file in read mode");
-          //  FileInputStream fin = new FileInputStream("/Users/apple/king.txt");
+            FileInputStream fin = new FileInputStream("/Users/apple/king.txt");
         //   FileInputStream fin = new FileInputStream("ImHere.txt");
-            FileInputStream fin = new FileInputStream("Nepal.txt");
+         //   FileInputStream fin = new FileInputStream("Nepal.txt");
 
             System.out.println("file is open now...lets see its content...");
 
