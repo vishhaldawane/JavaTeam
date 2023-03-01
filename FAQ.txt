@@ -1,0 +1,50 @@
+
+
+Frequently Asked Questions
+---------------------------
+
+
+1. What is a class?
+2. What is an Object?
+3. So what is the difference between a class and an object?
+3. What is a blue print of an object?
+4. What is an instance of a class?
+5. What is an abstract class?
+6. What is an abstract function?
+7. What is a final variable?
+8. What is a final method?
+9. What is a final class?
+10. What is a static function?
+11. What is a static method?
+12. What is checked Exception?
+13. What is unchecked exception?
+14. What is run time exception?
+15. what is try..catch?
+16. What is finally?
+17. What is extends?
+18. What is constructor?
+19. What is defualt constructor?
+20. What is the difference between explicit and implicit constructor?
+21. What is throws keyword?
+22. What is throw keyword?
+23. What is user defined or custom exception?
+24. What is object serialization?
+25. What is java.lang.Serializable interface?
+26. What is a Thread
+27. What is a Runnable interface?
+28. How to start a thread?
+29. What if a class has extended from another class, then how to make threads?
+30. What is thread synchronization?
+31. What is wait() method?
+32. What is notify() method?
+33. What is data types in java?
+34. What is the difference between byte based and character based stream?
+35. What is the difference between int,long,byte and short?
+36. What is method overriding?
+37. What is method overloading?
+38. Can we exend from multiple parent classes in java?
+39. What is your salary expectation?????????
+		you must know the standard salary for that designation
+		for a given experience,fresher or experienced????
+		
+		

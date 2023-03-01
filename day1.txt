@@ -1494,6 +1494,87 @@ same code of file handling you can try with FileReader/FileWriter
 
 
 
+------------------------------------------------------------
+
+
+	DAO Design pattern
+
+
+	23 design patterns - developed by Erich Gamma
+				and his team
+				known as Gang Of Four
+
+
+	"Data Access" Object
+
+
+							Kitchen
+							|
+							Chef
+							|
+							order3
+		Restaurant Tables			order2
+		|					order1
+							|
+	Order ----------------------------> Service Counter[DAO]
+	Collector			it hides the kitchen activities
+	|
+	order1	order2	order3
+	|	|	|
+	Pizza	Burger	Dosa
+	|	|	|
+	Table1	Table2	Table3....
+	|	|	|
+	Cust1  Cust2   Cust3
+	|	|	|
+	Menu	Menu	Menu
+	|	|	|
+	Order	Order	Order
+	
+	1. Register User [ object serialization - write the object]
+	2. Login User	 [ object de-serialization - read the object]
+				and authorize the user using password
+
+	3. Show All Users [ read all objects from the file]
+	4. Show A User	 [ read a particular user from the file ]
+				same as option 2
+	5. Modify A User [ modify the serialized object ]
+	6. Delete A User [ remove one of the object from the 
+				serialized ones ] 
+
+
+
+	3 components in the DAO
+	
+	POJO		POJI		POJI-implementation
+	|		|		|
+	plain old	plain old	implementation of this
+	java object	java interface	interface
+
+	|		|
+	User		UserDAO		UserDAOImpl
+	|		|		|
+	username	interface	impls is the real code
+	password	- adduser
+	emailAddress	- find user
+	age		- find all users
+	city		- modify user
+	pin		- delete user
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
